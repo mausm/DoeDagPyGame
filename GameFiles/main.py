@@ -12,7 +12,7 @@ XO = 'x'
 
 # storing the winner's value at
 # any instant of code
-winner = None
+winnaar = None
 
 # to check if the game is a draw
 draw = None
@@ -24,7 +24,7 @@ width = 400
 height = 400
 
 # to set background color of the
-# game window
+# game window (Max 255)
 white = (255, 255, 255)
 
 # color of the straightlines on that
@@ -88,7 +88,7 @@ def draw_status():
 	# into action
 	global draw
 	
-	if winner is None:
+	if winnaar is None:
 		message = XO.upper() + "'s Turn"
 	else:
 		message = winner.upper() + " won !"
